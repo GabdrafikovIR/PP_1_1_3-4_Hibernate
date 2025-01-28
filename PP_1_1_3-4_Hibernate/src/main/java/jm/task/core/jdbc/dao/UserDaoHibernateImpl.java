@@ -20,7 +20,7 @@ public class UserDaoHibernateImpl implements UserDao {
         try (SessionFactory sessionFactory = Util.getSessionFactory();
              Session session = sessionFactory.openSession()) {
             session.beginTransaction();
-            String createSQLTable = "CREATE TABLE IF NOT EXISTS `mydbtest1`.`user` (" +
+            String createSQLTable = "CREATE TABLE IF NOT EXISTS `user` (" +
                     "  `id` INT UNSIGNED NOT NULL AUTO_INCREMENT," +
                     "  `name` VARCHAR(45) NULL," +
                     "  `lastname` VARCHAR(45) NULL," +
